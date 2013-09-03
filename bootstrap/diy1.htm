@@ -5,150 +5,721 @@
   <title>diy1</title>
   <link href="bootstrap.css" rel="stylesheet">
   <link href="diy1.css" rel="stylesheet">
+  <script src="jquery.min.js"></script>
+  <script src="diy1.js"></script>
 </head>
 
-<body>
+<body class="theme1">
 
 <div id="TOP">
-  <div class="navigator">
-    <ul id="NAV" class="float header_nav">
-      <li>
-        <a href="/" class="top_logo"></a>
-      </li>
-      <li id="menu-item-1879" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1879">
-        <a href="http://www.coderblog.in/category/mobile/titanium">Titanium</a> <i></i>
-      </li>
-      <li id="menu-item-1530" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1530">
-        <a href="http://www.coderblog.in/category/web/javascript">Javascript</a> <i></i>
-      </li>
-      <li id="menu-item-751" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-751">
-        <a href="http://www.coderblog.in/category/net">.NET</a>
-        <i></i>
-      </li>
-      <li id="menu-item-753" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-753">
-        <a href="http://www.coderblog.in/category/wordpress">WordPress</a>
-        <i></i>
-      </li>
-      <li id="menu-item-754" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-754">
-        <a href="http://www.coderblog.in/category/ebook">好书推荐</a>
-        <i></i>
-      </li>
-      <li id="menu-item-756" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-756">
-        <a href="http://www.coderblog.in/category/jiqiao">技巧心得</a>
-        <i></i>
-      </li>
-      <li id="menu-item-2081" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2081">
-        <a href="http://www.coderblog.in/%e8%af%bb%e8%80%85%e5%a2%99">读者墙</a>
-        <i></i>
-      </li>
-      <li id="menu-item-2083" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2083">
-        <a href="http://www.coderblog.in/article-archive">时光轴</a>
-        <i></i>
-      </li>
-      <li id="menu-item-2084" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2084">
-        <a href="http://www.winsonalbums.com">摄影相册</a>
-        <i></i>
-      </li>
-      <li id="menu-item-2005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2005">
-        <a href="http://www.coderblog.in/guestbook">给博主留言</a>
-        <i></i>
-      </li>
-    </ul>
-  </div>
-  <div class="setting" id="setting">
-      <a href="#" title="背景定时随机切换：开" class="right background-toggle is-open"></a>
-    <div id="user" class="right">
-      <a href="javascript:;" class="offline" title="点击登录"></a>
+  <div class="forbg">
+    <div class="frame-top container">
+      <div class="frame-logo" id="frame-logo">
+        <a href="javascript:;" class="top_logo"></a>
+      </div>
+      <div class="frame-nav">
+        <ul>
+          <li>
+            <a href="javascript:;">首页</a>
+          </li>
+          <li>
+            <a href="javascript:;">资讯</a>
+          </li>
+          <li>
+            <a href="javascript:;">个人中心</a>
+          </li>
+        </ul>
+      </div>
+      <div id="searchA">
+        <div class="searchA fl cc">
+          <form action="searcher.php" method="post" onsubmit="javascript:return false;">
+            <input type="hidden" value="33e13a3e" name="verify">
+            <input value="2" type="hidden" name="step">
+            <input value="thread" type="hidden" id="search_type" name="type">
+            <div class="ip">
+              <input id="search_input" type="text" placeholder="搜索其实很简单！" class="gray" name="keyword" onfocus="searchFocus(this)" onblur="searchBlur(this)"></div>
+            <button type="submit" class="cp fl"></button>
+          </form>
+        </div>
+        <ul class="frame-box">
+          <li>
+            <a href="javascript:;">军事新闻</a>
+          </li>
+          <li>
+            <a href="javascript:;">汽车新闻</a>
+          </li>
+          <li>
+            <a href="javascript:;">社会新闻</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
+  <div class="sl-fixed sl-fixed-top nav_list yczx" id="GenreMoreLinks">
+    <div class="nav_list_con">
+      <div class="view-hover" invokename="导航链接3@顶部导航" altname="导航链接3@顶部导航" channelid="topnav">
+        <dl>
+          <dt>娱乐、休闲</dt>
+          <dd>
+            <a href="javascript:;">娱乐八卦</a>
+            <a href="javascript:;">五花八门</a>
+            <a href="javascript:;">搞笑视频</a>
+            <a href="javascript:;">色系军团</a>
+            <a href="javascript:;">音乐天堂</a>
+            <a href="javascript:;">游戏天地</a>
+            <a href="javascript:;">影视专区</a>
+            <a href="javascript:;">十二星座</a>
+            <a href="javascript:;">明星档案</a>
+            <a href="javascript:;">穿越火线</a>
+            <a href="javascript:;">搞笑图片</a>
+            <a href="javascript:;">奇闻趣事</a>
+          </dd>
+        </dl>
+        <div class="c"></div>
+      </div>
+    </div>
+    <div class="nav_list_con">
+      <div class="view-hover" invokename="导航链接2@顶部导航" altname="导航链接2@顶部导航" channelid="topnav">
+        <dl>
+          <dt>生活、经验</dt>
+          <dd>
+            <a href="javascript:;">美食厨房</a>
+            <a href="javascript:;">数码世界</a>
+            <a href="javascript:;">旅游户外</a>
+            <a href="javascript:;">家有宠物</a>
+            <a href="javascript:;">电脑知识</a>
+            <a href="javascript:;">母婴育儿</a>
+            <a href="javascript:;">健康频道</a>
+            <a href="javascript:;">拉风汽车</a>
+            <a href="javascript:;">体坛风云</a>
+            <a href="javascript:;">手机交流</a>
+            <a href="javascript:;">曝光台</a>
+            <a href="javascript:;">生活常识</a>
+          </dd>
+        </dl>
+        <div class="c"></div>
+      </div>
+    </div>
+    <div class="nav_list_con">
+      <div class="view-hover" invokename="导航链接1@顶部导航" altname="导航链接1@顶部导航" channelid="topnav">
+        <dl>
+          <dt>时尚</dt>
+          <dd>
+            <a href="javascript:;">女装搭配</a>
+            <a href="javascript:;">女生发型</a>
+            <a href="javascript:;">丽人妆颜</a>
+            <a href="javascript:;">我爱购物</a>
+            <a href="javascript:;">美体塑形</a>
+            <a href="javascript:;">明星榜样</a>
+            <a href="javascript:;">婚嫁地带</a>
+            <a href="javascript:;">家居装修</a>
+            <a href="javascript:;">减肥吧</a>
+          </dd>
+        </dl>
+        <div class="c"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="forbd">&nbsp;</div>
+  <div class="forld"></div>
 </div>
 
+
+<!-- 
 <div id="background-image">
   <div class="image">
     <img src="http://b.zol-img.com.cn/desk/bizhi/image/1/960x600/135106964681.jpg" alt="">
   </div>
 </div>
+ -->
 
-<div id="HEADER" class="container main-sub">
-  <a href="http://www.qumaomao.com/" title="随心社区" class="logo fl"></a>
-  <div class="oauth2">
-      <p>你可以使用以下账号登录：</p>
-      <div class="clr links">
-        <a class="weibo" title="新浪微博" href="javascript:open_oauth2_window('/login/weibo_login');">&nbsp;</a>
-        <a class="qqsite" title="腾讯QQ" href="javascript:open_oauth2_window('/login/qq_login');">&nbsp;</a>
-        <a class="kaixin" title="开心网" href="javascript:open_oauth2_window('/login/kaixin_login');">&nbsp;</a>
-        <a class="renren" title="人人网" href="javascript:open_oauth2_window('/login/renren_login');">&nbsp;</a>
-        <a class="douban" title="豆瓣网" href="javascript:open_oauth2_window('/login/douban_login');">&nbsp;</a>
-      </div>
+<div class="themeBg">
+
+  <div id="HEADER" class="container main-sub">
+    <a href="http://www.qumaomao.com/" title="随心社区" class="logo fl"></a>
+    <div class="oauth2">
+        <p>你可以使用以下账号登录：</p>
+        <div class="clr links">
+          <a class="weibo" title="新浪微博" href="javascript:open_oauth2_window('/login/weibo_login');">&nbsp;</a>
+          <a class="qqsite" title="腾讯QQ" href="javascript:open_oauth2_window('/login/qq_login');">&nbsp;</a>
+          <a class="kaixin" title="开心网" href="javascript:open_oauth2_window('/login/kaixin_login');">&nbsp;</a>
+          <a class="renren" title="人人网" href="javascript:open_oauth2_window('/login/renren_login');">&nbsp;</a>
+          <a class="douban" title="豆瓣网" href="javascript:open_oauth2_window('/login/douban_login');">&nbsp;</a>
+        </div>
+    </div>
+  </div>
+
+  <div id="BODY" class="container main-sub zip">
+    <section class="main left w-660">
+
+      <article class="article index-article post-2147 type-post status-publish format-standard">
+        <div class="format-icon" title="博文"></div>
+        <div class="wrap">
+          <h2 class="title">
+            <a href="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-post_id="2144">将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式</a>
+          </h2>
+          <div class="meta meta1">
+            <p class="author"> <i></i>
+              <span>
+                <a title="文章作者：Winson" href="http://www.coderblog.in/author/winson">Winson</a>
+              </span>
+            </p>
+            <p class="time" title="发布时间：2013年08月14日 10:59:39"> <i></i>
+              <span>8月14日 10:59</span>
+            </p>
+            <p class="view" title="浏览次数：84">
+              <i></i>
+              <span>84</span>
+            </p>
+            <p class="comment">
+              <a href="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html#comments" title="评论条数：0">
+                <i></i>
+                <span>0</span>
+              </a>
+            </p>
+          </div>
+          <div class="clr"></div>
+          <div class="body float odd">
+            <div class="text">
+              http://www.coderblog.in/wp-content/themes/yundanran-2-public
+              <div class="left thumbnail">
+                <a href="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" title="详细阅读《将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式》">
+                  <img class="post-thumbnail" src="http://www.coderblog.in/wp-content/themes/yundanran-2-public/public/image/random/tb1.jpg" width="140px" height="100px" alt="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式"></a>
+              </div>
+              用了一段时间的 VirtualBox 后，感觉有些功能还是没有 vmware的强，由于我是有一个独立的硬盘在VirtualBox里专门放源代码，所以这些文件又不想重新COPY出来再转移到vmware里，这就想到如果能直接将这个硬盘转成vmware格式，然后在现有的VM系统里加载此硬盘，那不就完美了？（更多…）
+            </div>
+          </div>
+          <div class="clr"></div>
+          <div class="meta meta2">
+            <p class="cat" title="文章所在分类">
+              <i></i>
+              <span>
+                <a href="http://www.coderblog.in/category/jiqiao">技巧心得</a>
+              </span>
+            </p>
+            <p class="tag" title="文章所有标签">
+              <i></i>
+              <span>
+                <a href="http://www.coderblog.in/tag/virtualbox">VirtualBox</a>
+                <a href="http://www.coderblog.in/tag/vmware">vmware</a>
+              </span>
+            </p>
+            <a class="share share-sina" title="分享到新浪微博" data-title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" data-link="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-summary="" href="#"></a>
+            <a class="share share-qqt" title="分享到腾讯微博" data-title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" data-link="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-summary="" href="#"></a>
+            <a class="share share-qqz" title="分享到QQ空间" data-title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" data-link="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-summary="" href="#"></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article index-article post-2085 type-post status-publish format-aside" id="article-2085">
+        <div class="format-icon" title="碎碎念"></div>
+        <div class="wrap">
+          <div class="clr"></div>
+          <div class="body float">
+            <div class="author-avatar">
+              <img src="http://www.coderblog.in/wp-content/themes/yundanran-2-public/public/image/avatar/0b9cceb3f78d423811a76da0da652eac.png" alt="avatar" width="60" height="60" class="avatar avatar-60 avatar-current"></div>
+            <div class="text">
+              <p>这次几乎有3个月时间没更新了，这段时间以来，其实也有不少技术点想与大家分享的，只是一来工作忙（呵，每次都是这个借口），二来总感觉没心情写博客了，所以迟迟未更新。</p>
+              <p>直到今天，终于下了决心再重新整理一次，花了不少心思找到这个模板，感觉还是挺满意的，有兴趣的朋友可看本站底部的链接，就是此模板设计者的网站。</p>
+              <p>以后会尽量花多点时间来更新，与大家分享更多好的技术与代码，希望多多支持吧！</p>
+              ……
+              <p class="follow">
+                <a class="y_button yes" href="http://www.coderblog.in/2013/07/change-theme-again.html" title="碎碎念：《再次更换主题！》">
+                  <span>follow碎碎念»</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="clr"></div>
+          <div class="meta">
+            <p class="author"> <i></i>
+              <span>
+                <a title="文章作者：Winson" href="http://www.coderblog.in/author/winson">Winson</a>
+              </span>
+            </p>
+            <p class="time" title="发布时间：2013年07月01日 00:17:58"> <i></i>
+              <span>7月1日 0:17</span>
+            </p>
+            <p class="view" title="浏览次数：253">
+              <i></i>
+              <span>253</span>
+            </p>
+            <p class="comment">
+              <a href="http://www.coderblog.in/2013/07/change-theme-again.html#comments" title="评论条数：4">
+                <i></i>
+                <span>4</span>
+              </a>
+            </p>
+            <div class="message"></div>
+            <a class="share share-sina" title="分享到新浪微博" data-title="再次更换主题！" data-link="http://www.coderblog.in/2013/07/change-theme-again.html" data-summary="" href="#"></a>
+            <a class="share share-qqt" title="分享到腾讯微博" data-title="再次更换主题！" data-link="http://www.coderblog.in/2013/07/change-theme-again.html" data-summary="" href="#"></a>
+            <a class="share share-qqz" title="分享到QQ空间" data-title="再次更换主题！" data-link="http://www.coderblog.in/2013/07/change-theme-again.html" data-summary="" href="#"></a>
+            <div class="zclip" id="zclip-ZeroClipboardMovie_9" style="position: absolute; left: 295px; top: 0px; width: 104px; height: 20px; z-index: 99;">
+              <embed id="ZeroClipboardMovie_9" src="http://www.coderblog.in/wp-content/themes/yundanran-2-public/public/script/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="104" height="20" name="ZeroClipboardMovie_9" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=9&amp;width=104&amp;height=20" wmode="transparent"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="article index-article post-2147 type-post status-publish format-standard">
+        <div class="format-icon" title="博文"></div>
+        <div class="wrap">
+          <h2 class="title">
+            <a href="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" title="《将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式》" data-post_id="2144">将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式</a>
+          </h2>
+          <div class="meta meta1">
+            <p class="author"> <i></i>
+              <span>
+                <a title="文章作者：Winson" href="http://www.coderblog.in/author/winson">Winson</a>
+              </span>
+            </p>
+            <p class="time" title="发布时间：2013年08月14日 10:59:39"> <i></i>
+              <span>8月14日 10:59</span>
+            </p>
+            <p class="view" title="浏览次数：84">
+              <i></i>
+              <span>84</span>
+            </p>
+            <p class="comment">
+              <a href="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html#comments" title="评论条数：0">
+                <i></i>
+                <span>0</span>
+              </a>
+            </p>
+          </div>
+          <div class="clr"></div>
+          <div class="body float odd">
+            <div class="text">
+              http://www.coderblog.in/wp-content/themes/yundanran-2-public
+              <div class="left thumbnail">
+                <a href="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" title="详细阅读《将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式》">
+                  <img class="post-thumbnail" src="http://www.coderblog.in/wp-content/themes/yundanran-2-public/public/image/random/tb1.jpg" width="140px" height="100px" alt="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式"></a>
+              </div>
+              用了一段时间的 VirtualBox 后，感觉有些功能还是没有 vmware的强，由于我是有一个独立的硬盘在VirtualBox里专门放源代码，所以这些文件又不想重新COPY出来再转移到vmware里，这就想到如果能直接将这个硬盘转成vmware格式，然后在现有的VM系统里加载此硬盘，那不就完美了？（更多…）
+            </div>
+          </div>
+          <div class="clr"></div>
+          <div class="meta meta2">
+            <p class="cat" title="文章所在分类">
+              <i></i>
+              <span>
+                <a href="http://www.coderblog.in/category/jiqiao" title="查看 技巧心得 下的所有文章">技巧心得</a>
+              </span>
+            </p>
+            <p class="tag" title="文章所有标签">
+              <i></i>
+              <span>
+                <a href="http://www.coderblog.in/tag/virtualbox" title="查看 VirtualBox 下的所有文章">VirtualBox</a>
+                <a href="http://www.coderblog.in/tag/vmware" title="查看 vmware 下的所有文章">vmware</a>
+              </span>
+            </p>
+            <a class="share share-sina" title="分享到新浪微博" data-title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" data-link="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-summary="" href="#"></a>
+            <a class="share share-qqt" title="分享到腾讯微博" data-title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" data-link="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-summary="" href="#"></a>
+            <a class="share share-qqz" title="分享到QQ空间" data-title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" data-link="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-summary="" href="#"></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article index-article post-2085 type-post status-publish format-aside" id="article-2085">
+        <div class="format-icon" title="碎碎念"></div>
+        <div class="wrap">
+          <div class="clr"></div>
+          <div class="body float">
+            <div class="author-avatar">
+              <img src="http://www.coderblog.in/wp-content/themes/yundanran-2-public/public/image/avatar/0b9cceb3f78d423811a76da0da652eac.png" alt="avatar" width="60" height="60" class="avatar avatar-60 avatar-current"></div>
+            <div class="text">
+              <p>这次几乎有3个月时间没更新了，这段时间以来，其实也有不少技术点想与大家分享的，只是一来工作忙（呵，每次都是这个借口），二来总感觉没心情写博客了，所以迟迟未更新。</p>
+              <p>直到今天，终于下了决心再重新整理一次，花了不少心思找到这个模板，感觉还是挺满意的，有兴趣的朋友可看本站底部的链接，就是此模板设计者的网站。</p>
+              <p>以后会尽量花多点时间来更新，与大家分享更多好的技术与代码，希望多多支持吧！</p>
+              ……
+              <p class="follow">
+                <a class="y_button yes" href="http://www.coderblog.in/2013/07/change-theme-again.html" title="碎碎念：《再次更换主题！》">
+                  <span>follow碎碎念»</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="clr"></div>
+          <div class="meta">
+            <p class="author"> <i></i>
+              <span>
+                <a title="文章作者：Winson" href="http://www.coderblog.in/author/winson">Winson</a>
+              </span>
+            </p>
+            <p class="time" title="发布时间：2013年07月01日 00:17:58"> <i></i>
+              <span>7月1日 0:17</span>
+            </p>
+            <p class="view" title="浏览次数：253">
+              <i></i>
+              <span>253</span>
+            </p>
+            <p class="comment">
+              <a href="http://www.coderblog.in/2013/07/change-theme-again.html#comments" title="评论条数：4">
+                <i></i>
+                <span>4</span>
+              </a>
+            </p>
+            <div class="message"></div>
+            <a class="share share-sina" title="分享到新浪微博" data-title="再次更换主题！" data-link="http://www.coderblog.in/2013/07/change-theme-again.html" data-summary="" href="#"></a>
+            <a class="share share-qqt" title="分享到腾讯微博" data-title="再次更换主题！" data-link="http://www.coderblog.in/2013/07/change-theme-again.html" data-summary="" href="#"></a>
+            <a class="share share-qqz" title="分享到QQ空间" data-title="再次更换主题！" data-link="http://www.coderblog.in/2013/07/change-theme-again.html" data-summary="" href="#"></a>
+            <div class="zclip" id="zclip-ZeroClipboardMovie_9" style="position: absolute; left: 295px; top: 0px; width: 104px; height: 20px; z-index: 99;">
+              <embed id="ZeroClipboardMovie_9" src="http://www.coderblog.in/wp-content/themes/yundanran-2-public/public/script/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="104" height="20" name="ZeroClipboardMovie_9" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=9&amp;width=104&amp;height=20" wmode="transparent"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="article index-article post-2147 type-post status-publish format-standard">
+        <div class="format-icon" title="博文"></div>
+        <div class="wrap">
+          <h2 class="title">
+            <a href="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" title="《将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式》" data-post_id="2144">将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式</a>
+          </h2>
+          <div class="meta meta1">
+            <p class="author"> <i></i>
+              <span>
+                <a title="文章作者：Winson" href="http://www.coderblog.in/author/winson">Winson</a>
+              </span>
+            </p>
+            <p class="time" title="发布时间：2013年08月14日 10:59:39"> <i></i>
+              <span>8月14日 10:59</span>
+            </p>
+            <p class="view" title="浏览次数：84">
+              <i></i>
+              <span>84</span>
+            </p>
+            <p class="comment">
+              <a href="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html#comments" title="评论条数：0">
+                <i></i>
+                <span>0</span>
+              </a>
+            </p>
+          </div>
+          <div class="clr"></div>
+          <div class="body float odd">
+            <div class="text">
+              http://www.coderblog.in/wp-content/themes/yundanran-2-public
+              <div class="left thumbnail">
+                <a href="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" title="详细阅读《将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式》">
+                  <img class="post-thumbnail" src="http://www.coderblog.in/wp-content/themes/yundanran-2-public/public/image/random/tb1.jpg" width="140px" height="100px" alt="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式"></a>
+              </div>
+              用了一段时间的 VirtualBox 后，感觉有些功能还是没有 vmware的强，由于我是有一个独立的硬盘在VirtualBox里专门放源代码，所以这些文件又不想重新COPY出来再转移到vmware里，这就想到如果能直接将这个硬盘转成vmware格式，然后在现有的VM系统里加载此硬盘，那不就完美了？（更多…）
+            </div>
+          </div>
+          <div class="clr"></div>
+          <div class="meta meta2">
+            <p class="cat" title="文章所在分类">
+              <i></i>
+              <span>
+                <a href="http://www.coderblog.in/category/jiqiao" title="查看 技巧心得 下的所有文章">技巧心得</a>
+              </span>
+            </p>
+            <p class="tag" title="文章所有标签">
+              <i></i>
+              <span>
+                <a href="http://www.coderblog.in/tag/virtualbox" title="查看 VirtualBox 下的所有文章">VirtualBox</a>
+                <a href="http://www.coderblog.in/tag/vmware" title="查看 vmware 下的所有文章">vmware</a>
+              </span>
+            </p>
+            <a class="share share-sina" title="分享到新浪微博" data-title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" data-link="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-summary="" href="#"></a>
+            <a class="share share-qqt" title="分享到腾讯微博" data-title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" data-link="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-summary="" href="#"></a>
+            <a class="share share-qqz" title="分享到QQ空间" data-title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" data-link="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-summary="" href="#"></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article index-article post-2085 type-post status-publish format-aside" id="article-2085">
+        <div class="format-icon" title="碎碎念"></div>
+        <div class="wrap">
+          <div class="clr"></div>
+          <div class="body float">
+            <div class="author-avatar">
+              <img src="http://www.coderblog.in/wp-content/themes/yundanran-2-public/public/image/avatar/0b9cceb3f78d423811a76da0da652eac.png" alt="avatar" width="60" height="60" class="avatar avatar-60 avatar-current"></div>
+            <div class="text">
+              <p>这次几乎有3个月时间没更新了，这段时间以来，其实也有不少技术点想与大家分享的，只是一来工作忙（呵，每次都是这个借口），二来总感觉没心情写博客了，所以迟迟未更新。</p>
+              <p>直到今天，终于下了决心再重新整理一次，花了不少心思找到这个模板，感觉还是挺满意的，有兴趣的朋友可看本站底部的链接，就是此模板设计者的网站。</p>
+              <p>以后会尽量花多点时间来更新，与大家分享更多好的技术与代码，希望多多支持吧！</p>
+              ……
+              <p class="follow">
+                <a class="y_button yes" href="http://www.coderblog.in/2013/07/change-theme-again.html" title="碎碎念：《再次更换主题！》">
+                  <span>follow碎碎念»</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="clr"></div>
+          <div class="meta">
+            <p class="author"> <i></i>
+              <span>
+                <a title="文章作者：Winson" href="http://www.coderblog.in/author/winson">Winson</a>
+              </span>
+            </p>
+            <p class="time" title="发布时间：2013年07月01日 00:17:58"> <i></i>
+              <span>7月1日 0:17</span>
+            </p>
+            <p class="view" title="浏览次数：253">
+              <i></i>
+              <span>253</span>
+            </p>
+            <p class="comment">
+              <a href="http://www.coderblog.in/2013/07/change-theme-again.html#comments" title="评论条数：4">
+                <i></i>
+                <span>4</span>
+              </a>
+            </p>
+            <div class="message"></div>
+            <a class="share share-sina" title="分享到新浪微博" data-title="再次更换主题！" data-link="http://www.coderblog.in/2013/07/change-theme-again.html" data-summary="" href="#"></a>
+            <a class="share share-qqt" title="分享到腾讯微博" data-title="再次更换主题！" data-link="http://www.coderblog.in/2013/07/change-theme-again.html" data-summary="" href="#"></a>
+            <a class="share share-qqz" title="分享到QQ空间" data-title="再次更换主题！" data-link="http://www.coderblog.in/2013/07/change-theme-again.html" data-summary="" href="#"></a>
+            <div class="zclip" id="zclip-ZeroClipboardMovie_9" style="position: absolute; left: 295px; top: 0px; width: 104px; height: 20px; z-index: 99;">
+              <embed id="ZeroClipboardMovie_9" src="http://www.coderblog.in/wp-content/themes/yundanran-2-public/public/script/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="104" height="20" name="ZeroClipboardMovie_9" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=9&amp;width=104&amp;height=20" wmode="transparent"></div>
+          </div>
+        </div>
+      </article>
+
+
+    </section>
+    <section class="sub right w-280">
+        <div class="article-tab">
+          <div class="tabs-line">
+            <span class="current"> <b class="icon1">最新文章</b>
+            </span>
+            <span> <b class="icon2">随机文章</b>
+            </span>
+            <span style="border-right:none">
+              <b class="icon3">回复最多</b>
+            </span>
+          </div>
+          <ul class="random-article tab-con" style="display: block;">
+            <li>
+              <b class="num-1">1</b>
+              <span class="last-time">09/03</span>
+              <a href="http://www.uisdc.com/joril" rel="bookmark" title="〖上海&amp;成都求职〗网页设计师（2人）" target="_blank">〖上海&amp;成都求职〗网页设计师（2人）</a>
+            </li>
+            <li>
+              <b class="num-2">2</b>
+              <span class="last-time">09/03</span>
+              <a href="http://www.uisdc.com/we-love-textpattern" rel="bookmark" title="你应该到这里寻找网页设计灵感" target="_blank">你应该到这里寻找网页设计灵感</a>
+            </li>
+            <li>
+              <b class="num-3">3</b>
+              <span class="last-time">09/03</span>
+              <a href="http://www.uisdc.com/green-color-website-designs" rel="bookmark" title="推荐！20个绿色网站设计欣赏" target="_blank">推荐！20个绿色网站设计欣赏</a>
+            </li>
+            <li>
+              <b class="num-4">4</b>
+              <span class="last-time">09/03</span>
+              <a href="http://www.uisdc.com/web-design-2" rel="bookmark" title="网页设计中那些不容忽视的细节" target="_blank">网页设计中那些不容忽视的细节</a>
+            </li>
+            <li>
+              <b class="num-5">5</b>
+              <span class="last-time">09/03</span>
+              <a href="http://www.uisdc.com/call-to-action" rel="bookmark" title="营销邮件中Call to Action设计技巧" target="_blank">营销邮件中Call to Action设计技巧</a>
+            </li>
+            <li>
+              <b class="num-6">6</b>
+              <span class="last-time">09/03</span>
+              <a href="http://www.uisdc.com/mobile-design-eight-principles" rel="bookmark" title="推荐阅读！移动设计八原则" target="_blank">推荐阅读！移动设计八原则</a>
+            </li>
+            <li>
+              <b class="num-7">7</b>
+              <span class="last-time">09/02</span>
+              <a href="http://www.uisdc.com/tilt-shift-photography" rel="bookmark" title="PS教程！怎么做出逼真的移轴照片" target="_blank">PS教程！怎么做出逼真的移轴照片</a>
+            </li>
+            <li>
+              <b class="num-8">8</b>
+              <span class="last-time">09/02</span>
+              <a href="http://www.uisdc.com/20-free-web-layout-psds" rel="bookmark" title="超赞！20套高质量的免费网页模版PSD" target="_blank">超赞！20套高质量的免费网页模版PSD</a>
+            </li>
+            <li>
+              <b class="num-9">9</b>
+              <span class="last-time">09/01</span>
+              <a href="http://www.uisdc.com/creative-web-design" rel="bookmark" title="聊聊网页设计创新式布局与交互" target="_blank">聊聊网页设计创新式布局与交互</a>
+            </li>
+            <li>
+              <b class="num-10">10</b>
+              <span class="last-time">09/01</span>
+              <a href="http://www.uisdc.com/date-visualisation" rel="bookmark" title="推荐！你的眼睛喜欢看什么？" target="_blank">推荐！你的眼睛喜欢看什么？</a>
+            </li>
+          </ul>
+          <ul class="random-article tab-con" style="display: none;">
+            <li>
+              <b class="num-1">1</b>
+              <a href="http://www.uisdc.com/%e4%bc%98%e8%ae%be%ef%bc%9a%e4%b8%a4%e5%88%86%e9%92%9f%e5%ae%8c%e7%be%8e%e6%bc%94%e7%a4%bametro%e8%ae%be%e8%ae%a1" rel="bookmark" title="优设：两分钟完美演示Metro设计" target="_blank">优设：两分钟完美演示Metro设计</a>
+            </li>
+            <li>
+              <b class="num-2">2</b>
+              <a href="http://www.uisdc.com/30-free-and-high-quality-fonts" rel="bookmark" title="30套设计感十足的免费优质字体下载" target="_blank">30套设计感十足的免费优质字体下载</a>
+            </li>
+            <li>
+              <b class="num-3">3</b>
+              <a href="http://www.uisdc.com/photoshop-matting-summer" rel="bookmark" title="Photoshop美女抠图教程" target="_blank">Photoshop美女抠图教程</a>
+            </li>
+            <li>
+              <b class="num-4">4</b>
+              <a href="http://www.uisdc.com/rainbow-wall-paper-in-photoshop" rel="bookmark" title="使用PS创建梦幻迷离的彩虹背景" target="_blank">使用PS创建梦幻迷离的彩虹背景</a>
+            </li>
+            <li>
+              <b class="num-5">5</b>
+              <a href="http://www.uisdc.com/the-gradient" rel="bookmark" title="究极解读：渐变技巧大揭密" target="_blank">究极解读：渐变技巧大揭密</a>
+            </li>
+            <li>
+              <b class="num-6">6</b>
+              <a href="http://www.uisdc.com/movie-resources-website" rel="bookmark" title="强烈推荐：90%的人都不知道的电影资源下载站" target="_blank">强烈推荐：90%的人都不知道的电影资源下载站</a>
+            </li>
+            <li>
+              <b class="num-7">7</b>
+              <a href="http://www.uisdc.com/20-inspirational-website-design" rel="bookmark" title="20个创意十足的倾斜式网站设计" target="_blank">20个创意十足的倾斜式网站设计</a>
+            </li>
+            <li>
+              <b class="num-8">8</b>
+              <a href="http://www.uisdc.com/the-benefits-of-interaction-design" rel="bookmark" title="化繁为简的交互设计给用户带来了什么？" target="_blank">化繁为简的交互设计给用户带来了什么？</a>
+            </li>
+            <li>
+              <b class="num-9">9</b>
+              <a href="http://www.uisdc.com/why-great-designers-steal" rel="bookmark" title="抄袭、抄习和抄越！愈伟大愈偷窃" target="_blank">抄袭、抄习和抄越！愈伟大愈偷窃</a>
+            </li>
+            <li>
+              <b class="num-10">10</b>
+              <a href="http://www.uisdc.com/blending-modes" rel="bookmark" title="带你认识Photoshop的混合模式" target="_blank">带你认识Photoshop的混合模式</a>
+            </li>
+          </ul>
+          <ul class="hot-article tab-con" style="display: none;">
+            <li>
+              <b class="num-1">1</b>
+              <span>(224)</span>
+              <a href="http://www.uisdc.com/sdc-030" title="【030期】像素画入门基础报名处" target="_blank">【030期】像素画入门基础报名处</a>
+            </li>
+            <li>
+              <b class="num-2">2</b>
+              <span>(222)</span>
+              <a href="http://www.uisdc.com/sdc-031" title="【031期讲座】如何设计精美的产品页面（含讲座PDF下载）" target="_blank">【031期讲座】如何设计精美的产品页面（含讲座PDF下载）</a>
+            </li>
+            <li>
+              <b class="num-3">3</b>
+              <span>(197)</span>
+              <a href="http://www.uisdc.com/recommend-designer" title="设计师" target="_blank">设计师</a>
+            </li>
+            <li>
+              <b class="num-4">4</b>
+              <span>(182)</span>
+              <a href="http://www.uisdc.com/comeon" title="网站推荐" target="_blank">网站推荐</a>
+            </li>
+            <li>
+              <b class="num-5">5</b>
+              <span>(165)</span>
+              <a href="http://www.uisdc.com/sdc-034" title="【034期】站酷网改版经验分享（含PDF下载）" target="_blank">【034期】站酷网改版经验分享（含PDF下载）</a>
+            </li>
+            <li>
+              <b class="num-6">6</b>
+              <span>(150)</span>
+              <a href="http://www.uisdc.com/sdc-033" title="【033期讲座】IPTV专题电视端的专题(含讲座PDF下载)" target="_blank">【033期讲座】IPTV专题电视端的专题(含讲座PDF下载)</a>
+            </li>
+            <li>
+              <b class="num-7">7</b>
+              <span>(127)</span>
+              <a href="http://www.uisdc.com/about" title="关于我们" target="_blank">关于我们</a>
+            </li>
+            <li>
+              <b class="num-8">8</b>
+              <span>(107)</span>
+              <a href="http://www.uisdc.com/knockout-2-0" title="PS抠图神器：KnockOut 2.0汉化版下载及教程" target="_blank">PS抠图神器：KnockOut 2.0汉化版下载及教程</a>
+            </li>
+            <li>
+              <b class="num-9">9</b>
+              <span>(95)</span>
+              <a href="http://www.uisdc.com/friendlink" title="友情链接" target="_blank">友情链接</a>
+            </li>
+            <li>
+              <b class="num-10">10</b>
+              <span>(60)</span>
+              <a href="http://www.uisdc.com/20free-website-psd" title="20款免费和创新的PSD网页设计模板" target="_blank">20款免费和创新的PSD网页设计模板</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="widget-wrap widget-inside">
+          <h3 class="widget-title">热门文章</h3>
+          <ul>
+            <li class="most-view">
+              <span class="views">70,746</span>
+              <a href="http://www.uisdc.com/knockout-2-0" title="PS抠图神器：KnockOut 2.0汉化版下载及教程">PS抠图神器：KnockOut 2.0汉化版下载及教程</a>
+            </li>
+            <li class="most-view">
+              <span class="views">42,753</span>
+              <a href="http://www.uisdc.com/cool-website" title="推荐！40个设计师必备的资源网站">推荐！40个设计师必备的资源网站</a>
+            </li>
+            <li class="most-view">
+              <span class="views">41,476</span>
+              <a href="http://www.uisdc.com/ps-skills-3" title="设计师应该知道的17个PS技巧">设计师应该知道的17个PS技巧</a>
+            </li>
+            <li class="most-view">
+              <span class="views">35,530</span>
+              <a href="http://www.uisdc.com/whats-new-for-designers-november" title="20个设计师必备工具推荐">20个设计师必备工具推荐</a>
+            </li>
+            <li class="most-view">
+              <span class="views">33,844</span>
+              <a href="http://www.uisdc.com/flat-icons-and-web-elements-for-ui-design" title="35套扁平化风格网页设计UI组件和图标">35套扁平化风格网页设计UI组件和图标</a>
+            </li>
+            <li class="most-view">
+              <span class="views">32,509</span>
+              <a href="http://www.uisdc.com/p2871" title="2012年最值得收藏的65套英文字体！免费下载！">2012年最值得收藏的65套英文字体！免费下载！</a>
+            </li>
+            <li class="most-view">
+              <span class="views">28,491</span>
+              <a href="http://www.uisdc.com/photoshop-tutorials-font" title="【文字特效篇】50个最优秀的Photoshop实例教程">【文字特效篇】50个最优秀的Photoshop实例教程</a>
+            </li>
+            <li class="most-view">
+              <span class="views">28,012</span>
+              <a href="http://www.uisdc.com/free-photoshop-ui-kits-online" title="怒赞！7个下载UI组件包的顶级网站">怒赞！7个下载UI组件包的顶级网站</a>
+            </li>
+            <li class="most-view">
+              <span class="views">27,351</span>
+              <a href="http://www.uisdc.com/color-theory-for-designers" title="设计师的配色理论：你真懂颜色了吗？">设计师的配色理论：你真懂颜色了吗？</a>
+            </li>
+          </ul>
+        </div>
+
+
+    </section>
   </div>
 </div>
 
-<div id="BODY" class="container main-sub zip">
-  <section class="main left w-660">
 
-    <article class="article index-article post-2147 type-post status-publish format-standard">
-      <div class="format-icon" title="博文"></div>
-      <div class="wrap">
-        <h2 class="title">
-          <a href="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" title="《将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式》" data-post_id="2144">将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式</a>
-        </h2>
-        <div class="meta meta1">
-          <p class="author"> <i></i>
-            <span>
-              <a title="文章作者：Winson" href="http://www.coderblog.in/author/winson">Winson</a>
-            </span>
-          </p>
-          <p class="time" title="发布时间：2013年08月14日 10:59:39"> <i></i>
-            <span>8月14日 10:59</span>
-          </p>
-          <p class="view" title="浏览次数：84">
-            <i></i>
-            <span>84</span>
-          </p>
-          <p class="comment">
-            <a href="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html#comments" title="评论条数：0">
-              <i></i>
-              <span>0</span>
-            </a>
-          </p>
-        </div>
-        <div class="clear"></div>
-        <div class="body float odd">
-          <div class="text">
-            http://www.coderblog.in/wp-content/themes/yundanran-2-public
-            <div class="left thumbnail">
-              <a href="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" title="详细阅读《将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式》">
-                <img class="post-thumbnail" src="/wp-content/themes/yundanran-2-public/public/image/random/tb12.jpg" width="140px" height="100px" alt="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式"></a>
-            </div>
-            用了一段时间的 VirtualBox 后，感觉有些功能还是没有 vmware的强，由于我是有一个独立的硬盘在VirtualBox里专门放源代码，所以这些文件又不想重新COPY出来再转移到vmware里，这就想到如果能直接将这个硬盘转成vmware格式，然后在现有的VM系统里加载此硬盘，那不就完美了？（更多…）
-          </div>
-        </div>
-        <div class="clear"></div>
-        <div class="meta meta2">
-          <p class="cat" title="文章所在分类">
-            <i></i>
-            <span>
-              <a href="http://www.coderblog.in/category/jiqiao" title="查看 技巧心得 下的所有文章">技巧心得</a>
-            </span>
-          </p>
-          <p class="tag" title="文章所有标签">
-            <i></i>
-            <span>
-              <a href="http://www.coderblog.in/tag/virtualbox" title="查看 VirtualBox 下的所有文章">VirtualBox</a>
-              <a href="http://www.coderblog.in/tag/vmware" title="查看 vmware 下的所有文章">vmware</a>
-            </span>
-          </p>
-          <a class="share share-sina" title="分享到新浪微博" data-title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" data-link="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-summary="" href="#"></a>
-          <a class="share share-qqt" title="分享到腾讯微博" data-title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" data-link="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-summary="" href="#"></a>
-          <a class="share share-qqz" title="分享到QQ空间" data-title="将VirtualBox(vdi)的虚拟硬盘格式转换为VMWare (vmdk) 格式" data-link="http://www.coderblog.in/2013/08/convert-virtualbox-to-vmware-format.html" data-summary="" href="#"></a>
-        </div>
+
+<div class="footer-wrap">
+  <div id="footer" class="container">
+    <div class="mb5">
+      <div class="bottom tac">
+        <span class="mr10">
+          <a rel="nofollow" href="http://www.qumaomao.com/read-htm-tid-1933.html" target="_blank">关于随心社区</a>
+        </span>
+        ·
+        <span class="mr10">
+          <a rel="nofollow" href="http://www.qumaomao.com/read-htm-tid-1346.html">联系我们</a>
+        </span>
+        ·
+        <span class="mr10">
+          <a rel="nofollow" href="/faq.php" target="_blank">帮助中心</a>
+        </span>
+        ·
+        <span class="mr10">
+          <a href="http://www.qumaomao.com/sitemap.php" target="_blank">网站地图</a>
+        </span>
       </div>
-    </article>
-
-  </section>
-  <section class="sub right w-280">
-    <div style="height:2000px;width:auto;"></div>
-  </section>
+    </div>
+    <div class="f10 s6 tac">
+      <p class="mb5">
+        ©2013 Powered by suixin365.com
+        <a href="http://www.qumaomao.com/" target="_blank">随心社区</a>
+        版权所有
+        <a href="http://www.cnzz.com/stat/website.php?web_id=1000035575" target="_blank" title="站长统计">
+          <img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/pic1.gif">
+        </a>
+      </p>
+    </div>
+  </div>
 </div>
 
 </body>
